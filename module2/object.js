@@ -23,3 +23,17 @@ let capAmerica={
     }
 }
 console.log(capAmerica);
+
+//name 
+console.log(capAmerica.Name);
+//age
+console.log(capAmerica.age);
+//friends
+console.log(capAmerica.friends);
+console.log(capAmerica.friends[1]);
+//address
+console.log(capAmerica.address);
+console.log(capAmerica.address.city);
+
+//sayHi
+capAmerica.sayHi();
