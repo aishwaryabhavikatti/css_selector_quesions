@@ -28,10 +28,18 @@ if(!fs.existsSync("hamariDirectory"))
 fs.mkdirSync("hamariDirectory");
 
 //read directory
-let folderPath=__dirname;
-let contentOfFolder= fs.readdirSync(folderPath);
-console.log(contentOfFolder);
+// let folderPath=__dirname;
+// let contentOfFolder= fs.readdirSync(folderPath);
+// console.log(contentOfFolder);
 
 
 //delete 
-fs.rmdirSync("hamariDirectory");
+//fs.rmdirSync("hamariDirectory");
+
+//copy file
+let sourcePath = path.join(__dirname,"file.txt")
+let destinationPath = path.join(__dirname,"module","file.txt")
+console.log(sourcePath);
+console.log(destinationPath);
+
+fs.copyFileSync(sourcePath,destinationPath); 
